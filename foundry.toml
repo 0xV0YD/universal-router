@@ -13,6 +13,17 @@ additional_compiler_profiles = [
   { name = "manager", via_ir = true, optimizer_runs = 30000 },
 ]
 
+remappings = [
+  "solmate/=lib/solmate/",
+  "permit2/=lib/permit2/",
+  "forge-std/=lib/forge-std/src/",
+  "@uniswap/v2-core/=lib/v2-core/",
+  "@uniswap/v3-periphery/=lib/v3-periphery/",
+  "@uniswap/v4-periphery/=lib/v4-periphery/"
+]
+
+
+
 compilation_restrictions = [
   { paths = "lib/v4-periphery/src/PositionManager.sol", optimizer_runs = 30000 },
 ]
