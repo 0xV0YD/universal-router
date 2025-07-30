@@ -8,16 +8,14 @@ contract DeployHyperEVM is DeployUniversalRouter {
     function setUp() public override {
         params = RouterParameters({
             permit2: 0x000000000022D473030F116dDEE9F6B43aC78BA3,
-            weth9: 0xB4FBF271143F4FBf7B91A5ded31805e42b2208d6,
-            v2Factory: 0xA028411927E2015A363014881a4404C636218fb1,
-            v3Factory: 0x22B0768972bB7f1F5ea7a8740BB8f94b32483826,
-            pairInitCodeHash: BYTES32_ZERO,
-            poolInitCodeHash: BYTES32_ZERO,
+            weth9: 0x5555555555555555555555555555555555555555,
+            v2Factory: 0x8f45C2143A875De1E31B1C3F523b4c6529E11615,
+            v3Factory: 0x40059A6F242C3de0E639693973004921B04D96AD,
+            pairInitCodeHash: 0x4ea93c483e04fb807568215bb1429bbdd54f31298f578c95149988c46bc5c142,
+            poolInitCodeHash: 0xcbdcf588045201d61e0d58ddb4ce87ce4089028dbb12bcc0bf6efb4ec367bb7d,
             v4PoolManager: address(0),
             v3NFTPositionManager: address(0),
             v4PositionManager: address(0)
         });
-
-        unsupported = 0x5302086A3a25d473aAbBd0356eFf8Dd811a4d89B;
     }
 }
